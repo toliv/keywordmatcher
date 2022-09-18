@@ -1,0 +1,32 @@
+{
+    "tweets" : [
+        {
+            "id": 57775, 
+            "tweet" : "Hello"
+        }, 
+        {
+            "id" : 14444,
+            "tweet" : "This is a tweet about some game that has occurred"
+        },
+        {
+            "id" : 46664,
+            "tweet" : "This is a tweet I made about some games that have occurred"
+        },
+        {
+            "id" : 15677,
+            "tweet" : "I wish I had a good recollection of the data file"
+        },
+        {
+            "id" : 9999930,
+            "tweet" : "Running into times I wish I studied regex better"
+        },
+        {
+            "id" : 625700,
+            "tweet" : "Welcome to the jungle"
+        },
+        {
+            "id" : 146624,
+            "tweet" : "Love in an elevator. Going up when Im going down."
+        }
+    ]
+}
