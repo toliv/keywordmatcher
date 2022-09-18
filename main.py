@@ -4,9 +4,6 @@ import re
 def word_in_tweet(word, tweet):
     return re.search(f"\\b{word}\\b", tweet) is not None
 
-def all_words_in_tweet(words, tweet):
-    return all([word_in_tweet(word, tweet) for word in words])
-
 tweets = []
 with open('tweets.json', 'r') as f:
     tweets = json.load(f)
@@ -38,7 +35,7 @@ def all_keywords_match(tweets, words):
     for tweet in tweets['tweets']:
         id = tweet['id']
         tweet = tweet['tweet']
-        if all_words_in_tweet(words, tweet):
+        if all([word_in_tweet(word, tweet) for word in words]):
             tweet_ids.append(id)
     
     return sorted(tweet_ids)
